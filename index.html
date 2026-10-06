@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>밸류체인에듀타운</title>
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="밸류체인에듀타운">
+  <meta property="og:image" content="assets/images/f3d061fff3d0d.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+    }
+    .gallery-grid .gallery-item {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1;
+      border-radius: 15px;
+    }
+    .gallery-grid .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-grid .gallery-item .gallery-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 15px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-grid .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-grid .gallery-item .gallery-overlay .g-name {
+      font-size: 15px; font-weight: 700; margin-bottom: 5px;
+    }
+    .gallery-grid .gallery-item .gallery-overlay .g-text {
+      font-size: 17px; line-height: 1.5; color: rgba(255,255,255,0.85);
+    }
+    .review-bottom-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    .review-bottom-info .rbi-left h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 20px;
+    }
+    .review-bottom-info .rbi-left ul li { margin-bottom: 6px; }
+    .review-bottom-info .rbi-left ul li a {
+      font-size: 14px; color: #e4e4e4; transition: color 0.3s;
+    }
+    .review-bottom-info .rbi-left ul li a:hover { color: #ccff47; }
+    .review-bottom-info .rbi-right { text-align: right; }
+    .review-bottom-info .rbi-right .company-name {
+      font-size: 16px; font-weight: 700; color: #f1f1f1; margin-bottom: 10px;
+    }
+    .review-bottom-info .rbi-right p {
+      font-size: 13px; line-height: 1.8; color: #f1f1f1;
+    }
+    .section-spacer-fafafa { background: #fafafa; }
+    .section-spacer-fafafa img { width: 100%; display: block; }
+    .section-spacer-f6f6f6 { background: #f6f6f6; }
+    .section-spacer-ceff47 { background: #ceff47; }
+    .section-spacer-ceff47 img { width: 100%; display: block; }
+    .btn-review-more {
+      display: inline-block;
+      padding: 8px 25px;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 14px;
+      border-radius: 9999px;
+      transition: all 0.3s;
+    }
+    .btn-review-more:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.5);
+    }
+    @media (max-width: 991px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .review-bottom-info { flex-direction: column; gap: 25px; }
+      .review-bottom-info .rbi-right { text-align: left; }
+    }
+    @media (max-width: 767px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo"><a href="index.html">밸류체인에듀타운</a></div>
+    <div class="header-right">
+      <ul class="nav-menu">
+        <li><a href="about.html">소개</a></li>
+        <li><a href="notice.html">소식</a></li>
+        <li><a href="class.html">클래스</a></li>
+        <li><a href="qna.html">Q&A</a></li>
+      </ul>
+      <a href="class.html" class="btn-join desktop-only">참여하기</a>
+      <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay"></div>
+<nav class="mobile-nav">
+  <button class="mobile-nav-close">&times;</button>
+  <ul>
+    <li><a href="about.html">소개</a></li>
+    <li><a href="notice.html">소식</a></li>
+    <li><a href="class.html">클래스</a></li>
+    <li><a href="qna.html">Q&A</a></li>
+  </ul>
+</nav>
+
+<!-- SECTION 1: HERO SLIDER -->
+<section class="hero-slider" id="hero-pc">
+  <div class="slide active" style="background-image:url('assets/images/02075d0f9244e.png');">
+    <div class="slide-content">
+      <h1>밸류체인에듀타운에<br>오신 것을 환영합니다.</h1>
+      <p><a href="#" class="btn-see-more">SEE MORE</a></p>
+    </div>
+  </div>
+  <div class="slide" style="background-image:url('assets/images/7d91687e2b475.png');">
+    <div class="slide-content">
+      <h1>2026 밸류체인에듀타운<br>2.3 - 3.4 수강생 모집기간</h1>
+      <p style="margin-top:15px;">영재들이 모이는 2026 밸류체인에듀타운 개최<br>참가 신청기간 2026.2.3 - 3.4 (23:30)</p>
+      <p style="margin-top:15px;">자세히 보기 <img src="assets/images/9db9eae1c86c0.png" alt="" style="width:26px;display:inline;vertical-align:middle;"></p>
+    </div>
+  </div>
+  <div class="slide" style="background-image:url('assets/images/6edd38e4ff42c.png');">
+    <div class="slide-content">
+      <h1>2026 밸류체인에듀타운<br>2.3 - 3.4 수강생 모집기간</h1>
+      <p style="margin-top:15px;">영재들이 모이는 2026 밸류체인에듀타운 개최<br>참가 신청기간 2026.2.3 - 3.4 (23:30)</p>
+      <p style="margin-top:15px;">자세히 보기 <img src="assets/images/9db9eae1c86c0.png" alt="" style="width:26px;display:inline;vertical-align:middle;"></p>
+    </div>
+  </div>
+  <div class="slider-dots">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+  </div>
+</section>
+
+<!-- SECTION 2: BLACK CTA -->
+<section class="section-black-info" style="padding:0;">
+  <div class="inside">
+    <div class="cta-row">
+      <a href="class.html"><strong>밸류체인에듀타운 수강 신청하기 &rarr;</strong></a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: BLACK INFO -->
+<section class="section-black-info" id="section-info-shared">
+  <div class="info-block">
+    <div class="inside">
+      <div class="info-left">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="notice.html">소식</a></li>
+          <li><a href="class.html">클래스</a></li>
+          <li><a href="qna.html">Q&A</a></li>
+        </ul>
+      </div>
+      <div class="info-right">
+        <div class="company-name">밸류체인 에듀타운</div>
+        <p>Business number. 276-40-01307<br>대표자 : 최지연 &nbsp;T. 02 6083 1337<br>66-5, Seooreung-ro 663beon-gil, Deogyang-gu, Goyang-si, Gyeonggi-do, Republic of Korea</p>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;padding-bottom:20px;">
+    <span style="font-size:12px;color:#9e9e9e;">@2024 RunningToday. All rights reserved.</span>
+  </div>
+</section>
+
+<!-- SECTION 4: EMPOWERING -->
+<section class="section-empowering">
+  <div style="height:69px;"></div>
+  <h2>Empowering the Next Generation for the Future</h2>
+  <div style="height:15px;"></div>
+  <p class="emp-desc">밸류체인에듀타운은 신뢰(Trust), 성장(Growth), 안전(Safety)을 핵심 가치로 하는 프리미엄 통합 교육 타운하우스입니다.<br>코칭, 영어, 수학·국어, 코딩, 디자인을 중심으로 한 미래형 융합 교육을 통해 자녀의 전인적 성장을 지원합니다.<br>소수 정예 멘토링과 24시간 안전 관리 시스템을 갖추어 학습뿐 아니라 생활 전반의 안정과 집중을 보장합니다.<br>전문 강사진과 코치진이 개별 맞춤 학습, 심리 상담, 멘탈 케어를 병행하며 자기주도적 성장을 이끌어냅니다.<br>&nbsp;서울의 여성 전용 교육 타운하우스로, 학부모가 신뢰할 수 있는 자녀의 미래 역량 개발 공간을 제공합니다.</p>
+  <div style="height:10px;"></div>
+  <div style="text-align:center;">
+    <a href="about.html" class="btn-more-round">더 알아보기</a>
+  </div>
+</section>
+
+<!-- SECTION 5: FULL WIDTH IMAGE -->
+<section class="section-full-image">
+  <div style="height:68px;"></div>
+  <img src="assets/images/c59b6d4ccb8ac.png" alt="밸류체인에듀타운">
+</section>
+
+<!-- SECTION 6: MISSION + VALUES -->
+<section class="section-mission-values" style="background-image:url('assets/images/25f6466fa297a.png');">
+  <div class="inside">
+    <div style="height:78px;"></div>
+    <div class="mission-text" style="max-width:58.333%;">
+      <div style="height:148px;"></div>
+      <h3>밸류체인에듀타운은 일상 속 도전과 성장을 통해<br>신뢰와 안전, 그리고 미래를 준비하는<br>교육 문화를 만들어갑니다.</h3>
+      <p>학생 한 명 한 명의 가능성을 발견하고, 코칭·영어·수학·코딩·디자인을 연결한 융합형 커리큘럼으로 지식 이상의 '삶의 역량'을 길러냅니다. 밸류체인에듀타운은 학습과 생활이 공존하는 교육 생태계로, 함께 배우고 성장하며 세상을 변화시키는 인재를 키워갑니다.</p>
+      <div style="height:292px;"></div>
+    </div>
+    <div class="values-row">
+      <div class="value-item">
+        <div>
+          <img src="assets/images/583778abcefd3.png" alt="Trust" class="value-icon">
+          <p class="value-tag">[ Trust ]</p>
+          <p class="value-name">신뢰</p>
+          <p class="value-desc">전문 코치와의 1:1 멘토링을 통해 학생의 가능성을 발견하고,<br>진정성있는 성장을 함께 만들어 갑니다.</p>
+        </div>
+      </div>
+      <div class="value-item">
+        <div>
+          <img src="assets/images/2dd737e909826.png" alt="Growth" class="value-icon">
+          <p class="value-tag">[ Growth ]</p>
+          <p class="value-name">성장</p>
+          <p class="value-desc">소수 정예 그룹 합습과 코칭 시스템을 통해<br>학생 스스로 목표를 세우고, 도전하며, 성취의 기쁨을 경험합니다.</p>
+        </div>
+      </div>
+      <div class="value-item">
+        <div>
+          <img src="assets/images/448c60096e317.png" alt="Safety" class="value-icon">
+          <p class="value-tag">[ Safety ]</p>
+          <p class="value-name">안전</p>
+          <p class="value-desc">24시간 상주 코치, 외부인 통제 시스템, 심리 케어 프로그램을 통해<br>학부모가 안심하고 자녀를 맡길 수 있는 캠퍼스를 실현합니다.</p>
+        </div>
+      </div>
+    </div>
+    <div style="height:90px;"></div>
+  </div>
+</section>
+
+<!-- SECTION 7: SPACER #f6f6f6 -->
+<section class="section-spacer-f6f6f6"><div style="height:1px;"></div></section>
+
+<!-- SECTION 8: SPACER #fafafa with image -->
+<section class="section-spacer-fafafa">
+  <img src="assets/images/e2da15be986f9.png" alt="">
+</section>
+
+<!-- SECTION 9: SPACER #ceff47 -->
+<section class="section-spacer-ceff47">
+  <div class="inside"><div style="height:44px;"></div></div>
+</section>
+
+<!-- SECTION 10: RECRUIT -->
+<section class="section-recruit">
+  <div class="inside">
+    <div class="recruit-grid">
+      <div class="recruit-left">
+        <img src="assets/images/42fb96cb1e8a1.png" alt="Recruit">
+      </div>
+      <div class="recruit-right">
+        <p class="recruit-label">Recruit</p>
+        <h3>목표 방향이 맞는 학생들이 모여<br>함께 배우고 성장하는 하루가 시작됩니다.</h3>
+        <p>모집 페이지에서 원하는 프로그램과 일정에 맞춰 자신에게 맞는 학습 그룹을 선택해보세요.</p>
+        <p>소수 정예 코칭, 맞춤 커리큘럼, 24시간 안전 관리 아래 전문 멘토와 함께 진짜 성장을 경험할 수 있습니다.</p>
+        <p>밸류체인에듀타운에서 신뢰와 안전 속에 미래를 준비하는 하루를 시작하세요.</p>
+        <div style="height:30px;"></div>
+        <a href="class.html" class="btn-participate">참여하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 11: SPACER #ceff47 -->
+<section class="section-spacer-ceff47">
+  <div class="inside"><div style="height:78px;"></div></div>
+</section>
+
+<!-- SECTION 12: SPACER #ceff47 with image -->
+<section class="section-spacer-ceff47">
+  <img src="assets/images/d15074a32a728.png" alt="">
+</section>
+
+<!-- SECTION 13: REVIEW -->
+<section class="section-review" style="background-image:url('assets/images/ddc8f7f31447f.jpg');background-size:cover;background-position:center;">
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:0.85;"></div>
+  <div class="inside" style="position:relative;z-index:2;">
+    <div style="height:33px;"></div>
+    <div class="review-header">
+      <p style="font-size:16px;color:#fff;"><strong>Review</strong></p>
+      <div style="height:5px;"></div>
+      <h3 style="font-size:36px;color:#fff;">수강생 &amp; 학부모 리뷰</h3>
+    </div>
+    <div style="height:20px;"></div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/images/53e2f260ba04c.png" alt="김*정님">
+        <div class="gallery-overlay">
+          <div class="g-name">김*정님</div>
+          <div class="g-text">코칭을 통해 아이들의 정서가 안정되고, 집안이 평화로워졌습니다. 엄마의 삶에도 여유가 생겼습니다.</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/c830d28c6c920.png" alt="조*정님">
+        <div class="gallery-overlay">
+          <div class="g-name">조*정님</div>
+          <div class="g-text">코칭을 통해 제 육아와 삶은 완전히 새로워졌습니다. 세상의 방식이 아닌 진짜 나침반을 찾았습니다.</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/22da41a93e49c.png" alt="김*현님">
+        <div class="gallery-overlay">
+          <div class="g-name">김*현님</div>
+          <div class="g-text">코칭을 통해 내 에너지를 지키고, 아이를 믿고 기다리는 육아로 한 걸음 성장했습니다.</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/bfdfaedcec8b0.png" alt="김*영님">
+        <div class="gallery-overlay">
+          <div class="g-name">김*영님</div>
+          <div class="g-text">코칭을 통해 부모로서의 마음과 권위를 회복하고, 아이에게 필요한 선택을 해줄 용기를 얻었습니다.</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/e7b3145e68395.png" alt="진*경님">
+        <div class="gallery-overlay">
+          <div class="g-name">진*경님</div>
+          <div class="g-text">코칭을 통해 아이들은 각자의 기질과 강점을 발견하며 스스로 선택하고 책임지는 힘을 키웠습니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:31px;"></div>
+    <div style="text-align:right;">
+      <a href="review.html" class="btn-review-more">리뷰 더보기</a>
+    </div>
+
+    <div style="height:40px;"></div>
+    <p style="font-size:16px;color:#fff;"><strong>INFORMATION</strong></p>
+    <div style="height:20px;"></div>
+    <div class="review-bottom-info">
+      <div class="rbi-left">
+        <ul>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="notice.html">소식</a></li>
+          <li><a href="class.html">모집</a></li>
+          <li><a href="class.html">신청</a></li>
+          <li><a href="qna.html">Q&A</a></li>
+        </ul>
+      </div>
+      <div class="rbi-right">
+        <div class="company-name">밸류체인 에듀타운</div>
+        <p>Business number. 276-40-01307<br>대표자 : 최지연 &nbsp;T. 02 6083 1337<br>66-5, Seooreung-ro 663beon-gil, Deogyang-gu, Goyang-si, Gyeonggi-do, Republic of Korea</p>
+      </div>
+    </div>
+    <div style="height:41px;"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="policy.html">이용약관</a>
+      <a href="privacy.html" class="bold">개인정보처리방침</a>
+    </div>
+    <div class="footer-info">대표자 이메일: veldy.official@gmail.com</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

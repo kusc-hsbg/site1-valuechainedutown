@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>리뷰 - 밸류체인에듀타운</title>
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .board-hero {
+      background: #000;
+      padding: 100px 0 60px;
+      text-align: center;
+      padding-top: calc(var(--header-height) + 60px);
+    }
+    .board-hero h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .board-hero p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+    }
+    .review-body {
+      max-width: var(--inside-width);
+      margin: 0 auto;
+      padding: 40px 20px 100px;
+    }
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .review-grid .review-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 30px;
+    }
+    .review-grid .review-card .reviewer-name {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .review-grid .review-card .reviewer-text {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #555;
+    }
+    @media (max-width: 991px) {
+      .review-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 767px) {
+      .review-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo"><a href="index.html">밸류체인에듀타운</a></div>
+    <div class="header-right">
+      <ul class="nav-menu">
+        <li><a href="about.html">소개</a></li>
+        <li><a href="notice.html">소식</a></li>
+        <li><a href="class.html">클래스</a></li>
+        <li><a href="qna.html">Q&A</a></li>
+      </ul>
+      <a href="class.html" class="btn-join desktop-only">참여하기</a>
+      <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay"></div>
+<nav class="mobile-nav">
+  <button class="mobile-nav-close">&times;</button>
+  <ul>
+    <li><a href="about.html">소개</a></li>
+    <li><a href="notice.html">소식</a></li>
+    <li><a href="class.html">클래스</a></li>
+    <li><a href="qna.html">Q&A</a></li>
+  </ul>
+</nav>
+
+<section class="board-hero">
+  <h1>수강생 &amp; 학부모 리뷰</h1>
+  <p>밸류체인에듀타운과 함께한 분들의 이야기입니다.</p>
+</section>
+
+<div class="review-body">
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="reviewer-name">김*정님</div>
+      <div class="reviewer-text">코칭을 통해 아이들의 정서가 안정되고, 집안이 평화로워졌습니다. 엄마의 삶에도 여유가 생겼습니다.</div>
+    </div>
+    <div class="review-card">
+      <div class="reviewer-name">조*정님</div>
+      <div class="reviewer-text">코칭을 통해 제 육아와 삶은 완전히 새로워졌습니다. 세상의 방식이 아닌 진짜 나침반을 찾았습니다.</div>
+    </div>
+    <div class="review-card">
+      <div class="reviewer-name">김*현님</div>
+      <div class="reviewer-text">코칭을 통해 내 에너지를 지키고, 아이를 믿고 기다리는 육아로 한 걸음 성장했습니다.</div>
+    </div>
+    <div class="review-card">
+      <div class="reviewer-name">김*영님</div>
+      <div class="reviewer-text">코칭을 통해 부모로서의 마음과 권위를 회복하고, 아이에게 필요한 선택을 해줄 용기를 얻었습니다.</div>
+    </div>
+    <div class="review-card">
+      <div class="reviewer-name">진*경님</div>
+      <div class="reviewer-text">코칭을 통해 아이들은 각자의 기질과 강점을 발견하며 스스로 선택하고 책임지는 힘을 키웠습니다.</div>
+    </div>
+  </div>
+</div>
+
+<section class="section-info">
+  <div class="info-inner">
+    <div class="info-nav">
+      <h4>INFORMATION</h4>
+      <ul>
+        <li><a href="about.html">소개</a></li>
+        <li><a href="notice.html">소식</a></li>
+        <li><a href="class.html">클래스</a></li>
+        <li><a href="qna.html">Q&A</a></li>
+      </ul>
+    </div>
+    <div class="info-company">
+      <div class="company-name">밸류체인 에듀타운</div>
+      <p>Business number. 276-40-01307<br>대표자 : 최지연 &nbsp;T. 02 6083 1337<br>66-5, Seooreung-ro 663beon-gil, Deogyang-gu, Goyang-si, Gyeonggi-do, Republic of Korea</p>
+      <div class="copyright">@2024 RunningToday. All rights reserved.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="policy.html">이용약관</a>
+      <a href="privacy.html" class="bold">개인정보처리방침</a>
+    </div>
+    <div class="footer-info">대표자 이메일: veldy.official@gmail.com</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
