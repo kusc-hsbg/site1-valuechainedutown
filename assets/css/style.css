@@ -350,12 +350,25 @@ img { max-width: 100%; height: auto; display: block; }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px 0;
+  padding: 0;
 }
 
-.mission-text {
-  margin-bottom: 60px;
+.mission-grid {
+  display: flex;
 }
+
+.mission-left {
+  flex: 0 0 58.33%;
+}
+
+.mission-right {
+  flex: 0 0 33.33%;
+}
+
+.mission-spacer-col {
+  flex: 0 0 8.33%;
+}
+
 .mission-text h3 {
   font-size: 30px;
   font-weight: 700;
@@ -369,25 +382,15 @@ img { max-width: 100%; height: auto; display: block; }
   color: #000;
   line-height: 1.9;
   text-align: left;
-  max-width: 700px;
 }
 
-.values-row {
-  display: flex;
-  gap: 0;
-  margin-top: 40px;
-}
 .value-item {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  padding: 0 20px;
+  padding: 0;
 }
 .value-item .value-icon {
   width: 40px;
   height: 40px;
-  flex-shrink: 0;
+  margin-bottom: 8px;
 }
 .value-item .value-tag {
   font-size: 16px;
@@ -414,6 +417,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .recruit-grid {
   display: flex;
+  gap: 30px;
 }
 .recruit-left {
   flex: 1;
@@ -471,99 +475,17 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--black);
   color: var(--white);
   position: relative;
-  padding: 60px 0 40px;
+  padding: 0;
 }
 .section-review .inside {
   position: relative;
   z-index: 2;
 }
 .review-header {
-  margin-bottom: 30px;
-}
-.review-header .review-label {
-  font-family: var(--font-en);
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: rgba(255,255,255,0.6);
-  margin-bottom: 8px;
-}
-.review-header h3 {
-  font-size: 28px;
-  font-weight: 700;
+  margin-bottom: 0;
 }
 
-.review-gallery {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-.review-track {
-  display: flex;
-  gap: 5px;
-  transition: transform 0.5s ease;
-}
-.review-card {
-  flex: 0 0 calc(20% - 4px);
-  background: rgba(255,255,255,0.08);
-  border-radius: 15px;
-  overflow: hidden;
-}
-.review-card img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-}
-.review-card .card-body {
-  padding: 15px;
-}
-.review-card .reviewer-name {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-.review-card .reviewer-text {
-  font-size: 13px;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.7);
-}
-
-.review-more {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-.review-more a {
-  font-size: 14px;
-  color: rgba(255,255,255,0.6);
-  transition: color 0.3s;
-}
-.review-more a:hover { color: var(--white); }
-
-/* Bottom info in review section */
-.bottom-info {
-  margin-top: 60px;
-  padding-top: 30px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.bottom-info .bi-left h4 {
-  font-family: var(--font-en);
-  font-size: 13px;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
-.bottom-info .bi-left ul {
-  display: flex;
-  gap: 15px;
-}
-.bottom-info .bi-left ul li a {
-  font-size: 13px;
-  color: rgba(255,255,255,0.5);
-  transition: color 0.3s;
-}
-.bottom-info .bi-left ul li a:hover { color: var(--white); }
+/* Gallery, review bottom info, and btn-review-more are in inline <style> in index.html */
 
 /* ===================== SUBPAGE INFO SECTION ===================== */
 .section-info {
@@ -690,12 +612,17 @@ img { max-width: 100%; height: auto; display: block; }
   .mobile-menu-btn { display: flex; }
 
   .section-empowering h2 { font-size: 32px; }
-  .values-row { flex-direction: column; gap: 30px; }
+  .mission-grid { flex-direction: column; }
+  .mission-left, .mission-right { flex: none; width: 100%; }
+  .mission-spacer-col { display: none; }
+  .mission-left > div[style*="padding-left"] { padding-left: 0 !important; }
+  .mission-right > div[style*="padding-left"] { padding-left: 0 !important; }
   .recruit-grid { flex-direction: column; }
-  .review-card { flex: 0 0 calc(50% - 4px); }
+  .recruit-left, .recruit-right { flex: none; width: 100%; }
   .info-block .inside { flex-direction: column; gap: 25px; }
   .info-block .info-right { text-align: left; }
-  .bottom-info { flex-direction: column; gap: 20px; }
+  .review-bottom-info { flex-direction: column; gap: 20px; }
+  .rbi-right { text-align: left; }
   .footer-inner { flex-direction: column; gap: 10px; text-align: center; padding: 0 17px; }
   .section-info .info-inner { padding: 0 17px; }
   .board-body { padding: 40px 17px 100px; }
@@ -706,5 +633,5 @@ img { max-width: 100%; height: auto; display: block; }
   .section-empowering h2 { font-size: 26px; }
   .mission-text h3 { font-size: 22px; }
   .recruit-right h3 { font-size: 22px; }
-  .review-card { flex: 0 0 calc(100% - 4px); }
+  .recruit-right h3 { font-size: 22px; }
 }
