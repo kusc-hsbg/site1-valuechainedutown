@@ -323,16 +323,15 @@ img { max-width: 100%; height: auto; display: block; }
 .btn-more-round {
   display: inline-block;
   padding: 10px 30px;
-  background: #121212;
-  border: none;
-  border-radius: 9999px;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 6px;
   font-size: 16px;
-  color: #fff;
+  color: #212121;
   transition: all 0.3s;
 }
 .btn-more-round:hover {
-  background: var(--accent);
-  color: #000;
+  background: rgba(0,0,0,0.05);
 }
 
 /* ===================== SECTION 4: FULL IMAGE ===================== */
