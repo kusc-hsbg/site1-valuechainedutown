@@ -1,0 +1,73 @@
+/* Pretendard English: 라틴 기본 블록(U+0020-007E)만 동적 서브셋 조각으로 제공한다. 원본 조각은 ../fonts/pretendard/web/variable/pretendardvariable-dynamic-subset.css */
+
+@font-face {
+	font-family: 'Pretendard English';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 45 920;
+	src: url(../fonts/pretendard/web/variable/woff2-dynamic-subset/PretendardVariable.subset.81.woff2) format('woff2-variations');
+	unicode-range: U+0024, U+0060;
+}
+
+@font-face {
+	font-family: 'Pretendard English';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 45 920;
+	src: url(../fonts/pretendard/web/variable/woff2-dynamic-subset/PretendardVariable.subset.85.woff2) format('woff2-variations');
+	unicode-range: U+005E;
+}
+
+@font-face {
+	font-family: 'Pretendard English';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 45 920;
+	src: url(../fonts/pretendard/web/variable/woff2-dynamic-subset/PretendardVariable.subset.86.woff2) format('woff2-variations');
+	unicode-range: U+003C-003D;
+}
+
+@font-face {
+	font-family: 'Pretendard English';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 45 920;
+	src: url(../fonts/pretendard/web/variable/woff2-dynamic-subset/PretendardVariable.subset.87.woff2) format('woff2-variations');
+	unicode-range: U+0023, U+0025, U+005F;
+}
+
+@font-face {
+	font-family: 'Pretendard English';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 45 920;
+	src: url(../fonts/pretendard/web/variable/woff2-dynamic-subset/PretendardVariable.subset.88.woff2) format('woff2-variations');
+	unicode-range: U+0026, U+002B, U+003E, U+0040, U+007E;
+}
+
+@font-face {
+	font-family: 'Pretendard English';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 45 920;
+	src: url(../fonts/pretendard/web/variable/woff2-dynamic-subset/PretendardVariable.subset.89.woff2) format('woff2-variations');
+	unicode-range: U+0048, U+007C;
+}
+
+@font-face {
+	font-family: 'Pretendard English';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 45 920;
+	src: url(../fonts/pretendard/web/variable/woff2-dynamic-subset/PretendardVariable.subset.90.woff2) format('woff2-variations');
+	unicode-range: U+0039, U+0049, U+004D-004E;
+}
+
+@font-face {
+	font-family: 'Pretendard English';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 45 920;
+	src: url(../fonts/pretendard/web/variable/woff2-dynamic-subset/PretendardVariable.subset.91.woff2) format('woff2-variations');
+	unicode-range: U+0020-0022, U+0027-002A, U+002C-0038, U+003A-003B, U+003F, U+0041-0047, U+004A-004C, U+004F-005D, U+0061-007B, U+007D;
+}
